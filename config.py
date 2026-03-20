@@ -28,3 +28,8 @@ OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gpt-oss:20b")
 SUMMARY_DAILY = True
 SUMMARY_WEEKLY = True
 BATCH_SIZE = 3
+
+# Prompt template settings
+PROMPTS_FILE = os.getenv("PROMPTS_FILE", "prompts/templates.json")
+DAILY_PROMPT_KEY = os.getenv("DAILY_PROMPT_KEY", "daily_summary")
+WEEKLY_PROMPT_KEY = os.getenv("WEEKLY_PROMPT_KEY", "weekly_summary")
