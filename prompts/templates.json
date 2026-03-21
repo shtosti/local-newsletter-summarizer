@@ -1,7 +1,9 @@
 {
   "shared_prefix": "You are an expert newsletter analyst. Produce clear, factual markdown with concise bullets.",
   "prompts": {
-    "daily_summary": "Summarize the following newsletters into a DAILY digest for {date}.\nFocus on: major announcements, product launches, practical AI workflows, and links or references mentioned.\nOutput sections:\n1) TL;DR (3-5 bullets)\n2) Notable Updates\n3) Why It Matters\n4) Actions To Try",
-    "weekly_summary": "Summarize the following newsletters into a WEEKLY roundup for {week_label}.\nDe-duplicate repeated news, group related items, and highlight signal over noise.\nOutput sections:\n1) Weekly Highlights\n2) Key Trends\n3) Tools and Releases\n4) Strategic Takeaways"
+    "daily_summary_AI": "Summarize the following newsletters into a DAILY digest for {date}.\nFocus on: major announcements, product launches, practical AI workflows, and links or references mentioned.\nOutput sections:\n1) TL;DR (3-5 bullets)\n2) Notable Updates\n3) Why It Matters\n4) Actions To Try",
+    "weekly_summary_AI": "Summarize the following newsletters into a WEEKLY roundup for {week_label}.\nDe-duplicate repeated news, group related items, and highlight signal over noise.\nOutput sections:\n1) Weekly Highlights\n2) Key Trends\n3) Tools and Releases\n4) Strategic Takeaways",
+    "daily_summary_personal": "Summarize personal emails into a DAILY digest for {date}. Ignore newsletters, promotions, and spam. \nFocus on: important updates, action items, and key information.\nOutput sections:\n1) TL;DR (3-5 bullets)\n2) Important Updates\n3) Action Items\n4) Key Information",
+    "weekly_summary_personal": "Summarize personal emails into a WEEKLY roundup for {week_label}. Ignore newsletters, promotions, and spam. \nFocus on: important updates, action items, and key information.\nOutput sections:\n1) Weekly Highlights\n2) Important Updates\n3) Action Items\n4) Key Information"
   }
 }
