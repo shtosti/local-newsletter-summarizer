@@ -26,8 +26,11 @@ class GmailClient:
             token_path.write_text(self.creds.to_json(), encoding="utf-8")
         self.service = build('gmail', 'v1', credentials=self.creds)
 
-    def fetch_emails(self, max_results=50):
-        results = self.service.users().messages().list(userId='me', q=EMAIL_QUERY, maxResults=max_results).execute()
+    def fetch_emails(self, max_results=50, query=None):
+        effective_query = EMAIL_QUERY if query is None else query
+        results = self.service.users().messages().list(
+            userId='me', q=effective_query, maxResults=max_results
+        ).execute()
         messages = results.get('messages', [])
         return [self.get_email(msg['id']) for msg in messages]
 
