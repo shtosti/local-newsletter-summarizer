@@ -64,7 +64,7 @@ SUMMARY_RUNS = [
 	},
 	{
 		"name": "newsletters_weekly",
-		"enabled": False,
+		"enabled": True,
 		"query": "-category:primary",
 		"max_results": 20,
 		"batch_size": BATCH_SIZE,
@@ -75,7 +75,7 @@ SUMMARY_RUNS = [
 	},
 	{
 		"name": "personal_weekly",
-		"enabled": False,
+		"enabled": True,
 		"query": "-category:updates -category:promotions -category:social -category:forums -category:primary",
 		"max_results": 20,
 		"batch_size": BATCH_SIZE,
